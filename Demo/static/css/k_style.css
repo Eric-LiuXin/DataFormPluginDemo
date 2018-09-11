@@ -1,0 +1,149 @@
+/*
+ * @Author: K.LEE 
+ * @Date: 2018-05-18 19:18:57 
+ * @Last Modified by: K.LEE
+ * @Last Modified time: 2018-05-24 14:06:30
+ */
+
+html,
+body {
+    background: #f6f6f6;
+    color: #222222
+}
+
+a {
+    color: #222222
+}
+
+a:hover {
+    color: #222222;
+    text-decoration: none;
+}
+
+h1,
+.uk-h1,
+h2,
+.uk-h2,
+h3,
+.uk-h3,
+h4,
+.uk-h4,
+h5,
+.uk-h5,
+h6,
+.uk-h6 {
+    font-weight: normal;
+}
+
+.uk-text-meta {
+    font-size: 13px;
+}
+
+/* 动态为footer添加类fixed-bottom */
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* header */
+
+.uk-navbar-container {
+    height: 60px;
+}
+
+.tm-navbar-container .uk-navbar-nav>li>a,
+.tm-navbar-container .uk-navbar-item:not(.uk-logo),
+.tm-navbar-container .uk-navbar-toggle {
+    font-size: 15px;
+}
+
+.tm-navbar-container:not(.uk-navbar-transparent) a,
+.tm-navbar-container:not(.uk-navbar-transparent) a:hover,
+.tm-navbar-container:not(.uk-navbar-transparent) .uk-navbar-dropdown-nav>li>a {
+    color: #222;
+}
+
+.tm-navbar-container:not(.uk-navbar-transparent) .uk-text-meta {
+    color: #999;
+}
+
+.uk-logo {
+    /* width: 200px; */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tm-navbar-container:not(.uk-navbar-transparent) .uk-text-primary {
+    color: #1e87f0 !important;
+}
+
+/* button */
+
+.uk-button-warning,
+.uk-button-warning:hover {
+    background-color: #faa05a;
+    color: #fff;
+    border: 1px solid #0000;
+}
+.uk-button-success,
+.uk-button-success:hover {
+    background-color: #82bb42;
+    color: #fff;
+    border: 1px solid #0000;
+}
+
+/* ribbon */
+
+.ribbon-wrapper-1 {
+    width: 106px;
+    height: 108px;
+    overflow: hidden;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+}
+
+.ribbon-1 {
+    font: bold 15px Sans-Serif;
+    line-height: 18px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -11px;
+    top: 26px;
+    width: 150px;
+    background-color: #faa05a;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
+}
+
+.ribbon-1:before,
+.ribbon-1:after {
+    content: "";
+    border-top: 4px solid #c57537;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    bottom: -4px;
+}
+
+.ribbon-1:before {
+    left: 0;
+}
+
+.ribbon-1:after {
+    right: 0;
+}
+
+.uk-sticky-fixed {
+    z-index: 99999;
+}

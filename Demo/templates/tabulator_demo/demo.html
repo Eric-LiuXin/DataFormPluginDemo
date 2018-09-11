@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block head %}
+{% include 'head.html' %}
+<link rel="stylesheet" href='{% static "css/tabulator.min.css" %}' />
+{% endblock %}
+
+{% block content %}
+<div class="tm-main uk-section uk-section-small">
+    <div class="uk-container">
+        <div id="example-table"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+{% include 'js.html' %}
+<script src='{% static "js/jquery-ui.min.js" %}'></script>
+<script src='{% static "js/tabulator.min.js" %}'></script>
+<script src='{% static "js/ajax_csrf_token.js" %}'></script>
+<script>
+$("#example-table").tabulator({
+    height:"311px",
+    layout:"fitColumns",
+    ajaxURL:"/tabulator_demo/get_data",
+    ajaxProgressiveLoad:"scroll",
+    paginationSize:20,
+    placeholder:"No Data Set",
+    columns:[
+        {title:"account_number", field:"account_number"},
+    ],
+});
+</script>
+{% endblock %}
